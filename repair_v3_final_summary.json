@@ -1,0 +1,24 @@
+[
+  {
+    "ratio": 5,
+    "n": 30,
+    "baseline_f1": 0.652,
+    "compressed_f1": 0.39,
+    "repaired_f1": 0.523,
+    "compressed_em": 0.233,
+    "repaired_em": 0.367,
+    "recovery_percent": 50.7,
+    "guard_used": 0
+  },
+  {
+    "ratio": 10,
+    "n": 30,
+    "baseline_f1": 0.652,
+    "compressed_f1": 0.424,
+    "repaired_f1": 0.457,
+    "compressed_em": 0.3,
+    "repaired_em": 0.333,
+    "recovery_percent": 14.4,
+    "guard_used": 0
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "ratio": 5,
+    "n": 30,
+    "baseline_f1": 0.753,
+    "compressed_f1": 0.543,
+    "repaired_f1": 0.576,
+    "compressed_em": 0.4,
+    "repaired_em": 0.4,
+    "recovery_percent": 15.7
+  },
+  {
+    "ratio": 10,
+    "n": 30,
+    "baseline_f1": 0.753,
+    "compressed_f1": 0.431,
+    "repaired_f1": 0.458,
+    "compressed_em": 0.367,
+    "repaired_em": 0.267,
+    "recovery_percent": 8.3
+  },
+  {
+    "ratio": 20,
+    "n": 30,
+    "baseline_f1": 0.753,
+    "compressed_f1": 0.379,
+    "repaired_f1": 0.329,
+    "compressed_em": 0.233,
+    "repaired_em": 0.2,
+    "recovery_percent": -13.3
+  }
+]

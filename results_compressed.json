@@ -1,0 +1,2846 @@
+{
+  "summaries": [
+    {
+      "condition": "compressed",
+      "ratio": 2,
+      "n": 100,
+      "exact_match": 0.49,
+      "f1": 0.67,
+      "avg_prompt_tokens": 765
+    },
+    {
+      "condition": "compressed",
+      "ratio": 5,
+      "n": 100,
+      "exact_match": 0.34,
+      "f1": 0.483,
+      "avg_prompt_tokens": 383
+    },
+    {
+      "condition": "compressed",
+      "ratio": 10,
+      "n": 100,
+      "exact_match": 0.32,
+      "f1": 0.407,
+      "avg_prompt_tokens": 251
+    },
+    {
+      "condition": "compressed",
+      "ratio": 20,
+      "n": 100,
+      "exact_match": 0.23,
+      "f1": 0.33,
+      "avg_prompt_tokens": 182
+    }
+  ],
+  "rows": {
+    "2": [
+      {
+        "id": "5ae143ed55429920d5234360",
+        "pred": "1755",
+        "gold": "1755",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc19705542993a06baf86e",
+        "pred": "Dutch",
+        "gold": "Dutch",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3e0f7554299194317388b",
+        "pred": "None.",
+        "gold": "Kevin Spacey",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae518655542993aec5ec139",
+        "pred": "40 members",
+        "gold": "40 members",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab985eb554299131ca42360",
+        "pred": "Greyia",
+        "gold": "Greyia",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8753d95542994846c1cd63",
+        "pred": "No",
+        "gold": "yes",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab97d0a5542996be202051e",
+        "pred": "John Andr\u00e9",
+        "gold": "John Andr\u00e9",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adef1b35542993a75d263af",
+        "pred": "Pen\u00e9lope\u202fCruz and Salma\u202fHayek",
+        "gold": "Salma Hayek Pinault",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a73b55855429978a71e9086",
+        "pred": "Gatwick Airport.",
+        "gold": "Gatwick Airport",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae80919554299540e5a56f6",
+        "pred": "1991\u202fScottish\u202fLandscape",
+        "gold": "The Changing Scottish Landscape",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ae361605542994393b9e69b",
+        "pred": "US Naval Submarine Base New\u202fLondon (Groton submarine school)",
+        "gold": "\"Home of the Submarine Force\"",
+        "em": 0.0,
+        "f1": 0.15384615384615383
+      },
+      {
+        "id": "5ac3a76e554299741d48a2be",
+        "pred": "U2",
+        "gold": "U2",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7557d75542992d0ec05f68",
+        "pred": "Laurie Metcalf",
+        "gold": "Laurie Metcalf",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8d12ca5542994ba4e3dbe2",
+        "pred": "Dar\u202fes\u202fSalaam",
+        "gold": "Nairobi, Kenya",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab7f6d35542993667794070",
+        "pred": "Cyclic\u202fDefrost",
+        "gold": "Cyclic Defrost",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3d9135542995c82c4ac4c",
+        "pred": "729",
+        "gold": "729 at the 2010 census",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5ae129115542990adbacf722",
+        "pred": "Francis\u202fMcPeake",
+        "gold": "Francis McPeake",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a86769c5542994775f60776",
+        "pred": "Slaughterhouse\u2011Five",
+        "gold": "Slaughterhouse-Five",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab31864554299233954ff06",
+        "pred": "String instrument",
+        "gold": "strings",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7b1023554299042af8f6c2",
+        "pred": "Ride a Wild Pony.",
+        "gold": "Ride a Wild Pony",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac19f405542991316484b5b",
+        "pred": "dogs",
+        "gold": "dogs",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae382ee5542992e3233c430",
+        "pred": "Classical realism",
+        "gold": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5adcdf455542994ed6169c11",
+        "pred": "Royal Air Force (RAF)",
+        "gold": "Royal Air Force",
+        "em": 0.0,
+        "f1": 0.8571428571428571
+      },
+      {
+        "id": "5ac35a7e554299741d48a257",
+        "pred": "Norwegian",
+        "gold": "Norwegian language",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab2659e554299340b5254b2",
+        "pred": "Parthian Empire",
+        "gold": "the Parthian Empire",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adcbb815542994ed6169bde",
+        "pred": "Stone Brewing Co.",
+        "gold": "Stone Brewing",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5a74f8bd5542993748c8976a",
+        "pred": "Tim\u202fCluess.",
+        "gold": "Tim Cluess",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ade25ed5542997c77aded70",
+        "pred": "Cold War (1947\u20111991)",
+        "gold": "the Cold War (1947\u201391)",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a78ae8b5542990784727730",
+        "pred": "115 miles",
+        "gold": "about 115 miles (185 km)",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ae12a4b55429920d52342df",
+        "pred": "Puli\u202fAlam",
+        "gold": "Puli Alam",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae22eae554299495565da30",
+        "pred": "310",
+        "gold": "310",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6aa4c55429953192ad359",
+        "pred": "Kitty",
+        "gold": "\"Kitty Hawk\"",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5adf3e835542993a75d26442",
+        "pred": "Nick Fury, Agent of S.H.I.E.L.D.",
+        "gold": "Marvel",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ee3a755429917b4a5be02",
+        "pred": "Bing Crosby",
+        "gold": "Harry Lillis \"Bing\" Crosby Jr.",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ac0dcf25542996f0d89cc2c",
+        "pred": "Jane Mayer",
+        "gold": "Jane Mayer",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7e618155429949594199b0",
+        "pred": "Albany County",
+        "gold": "Albany",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab916e155429919ba4e23a4",
+        "pred": "Chiwetel Ejiofor",
+        "gold": "Chiwetel Ejiofor",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a713b325542994082a3e6b5",
+        "pred": "Agra",
+        "gold": "Agra",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a87c13f5542996e4f30890c",
+        "pred": "Rome",
+        "gold": "Rome",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8843cd5542994846c1ce75",
+        "pred": "Mwabvi River",
+        "gold": "Buffalo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab90d8955429916710eb0f1",
+        "pred": "Smoothie King Center",
+        "gold": "Smoothie King Center",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae788fa55429952e35ea964",
+        "pred": "jam\u2011band sound",
+        "gold": "extensive use of segues",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1925a554299492dc91b48",
+        "pred": "Lady Charlotte Elliot",
+        "gold": "Charlotte Carnegie",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5ae1443855429920d5234362",
+        "pred": "World War\u202fII",
+        "gold": "World War II",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac54c435542993e66e822d1",
+        "pred": "Oklahoma State University.",
+        "gold": "Oklahoma State University",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7a77425542995eb53be83e",
+        "pred": "Nick Carter.",
+        "gold": "Brady Seals",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7153d05542994082a3e7dc",
+        "pred": "Nusretiye Mosque",
+        "gold": "Nusretiye Mosque",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae361805542992e3233c3c9",
+        "pred": "",
+        "gold": "Georgetown University",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a72688c5542997f827839b2",
+        "pred": "Turkey",
+        "gold": "Turkey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7ce0ce554299452d57ba92",
+        "pred": "William\u202fMcKinley",
+        "gold": "William McKinley",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a83411655429966c78a6b5d",
+        "pred": "Justin\u202fSpitzer",
+        "gold": "Justin Spitzer",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a877dd65542993e715abf79",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6087a554299110f2199be",
+        "pred": "Yes.",
+        "gold": "yes",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adbd70c55429947ff173843",
+        "pred": "Personal",
+        "gold": "Personal History",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a7796e05542992a6e59df0f",
+        "pred": "Netherlands",
+        "gold": "Netherlands",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc030e554299642a094bdc",
+        "pred": "1945\u20111951",
+        "gold": "1945 to 1951",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7bb7f2554299042af8f7b6",
+        "pred": "Gweilo",
+        "gold": "Gweilo",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8b3de95542997f31a41cc3",
+        "pred": "1993",
+        "gold": "Tian Tan Buddha",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab3bfd3554299233954ff99",
+        "pred": "Dirk Nowitzki",
+        "gold": "Dirk Werner Nowitzki",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ab9b7d555429970cfb8eb7a",
+        "pred": "Henry\u202fLau",
+        "gold": "Henry Lau",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6bf6d55429953192ad372",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae7cb9b5542994a481bbde2",
+        "pred": "Kamehameha\u202fI",
+        "gold": "Kalokuokamaile",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab1d6545542997061209588",
+        "pred": "12 years old",
+        "gold": "Bocelli became completely blind at the age of 12",
+        "em": 0.0,
+        "f1": 0.18181818181818182
+      },
+      {
+        "id": "5addcb215542997dc7907033",
+        "pred": "Naomi Campbell",
+        "gold": "Naomi Elaine Campbell",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ae528ed5542993aec5ec16e",
+        "pred": "The Revenger's Tragedy",
+        "gold": "Revengers Tragedy",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8c7ced5542995e66a4761c",
+        "pred": "Film and television industry.",
+        "gold": "entertainment",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a72f74a55429901807daf59",
+        "pred": "Rosie O'Donnell",
+        "gold": "Rosie O'Donnell",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae1d4e8554299234fd04312",
+        "pred": "Rob\u202fSitch",
+        "gold": "Robert Ian \"Rob\" Sitch",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a80aeef5542992097ad301a",
+        "pred": "The Shins",
+        "gold": "The Shins",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7f66f155429969796c1a33",
+        "pred": "Sweden, Norway, Denmark",
+        "gold": "Denmark\u2013Norway\u2013Sweden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abbda84554299642a094b5b",
+        "pred": "Mach\u202f2",
+        "gold": "2",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5abe3dc65542993f32c2a0c4",
+        "pred": "8",
+        "gold": "8",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae489ab5542995ad6573d62",
+        "pred": "Mookie Blaylock",
+        "gold": "Mookie Blaylock",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7e1b7155429965cec5ea6c",
+        "pred": "Chrysler\u202fFCA\u202fUS\u202fLLC.",
+        "gold": "Fiat Chrysler Automobiles N.V.",
+        "em": 0.0,
+        "f1": 0.25
+      },
+      {
+        "id": "5a8fae205542997ba9cb32ec",
+        "pred": "Mystery\u2011drama series (Open Heart)",
+        "gold": "American-Canadian mystery-drama",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae588cb55429960a22e0300",
+        "pred": "Chaerophyllum",
+        "gold": "Chaerophyllum",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a75e62f5542992d0ec06013",
+        "pred": "Tropicana Hotel Atlantic City",
+        "gold": "Tropicana Casino & Resort",
+        "em": 0.0,
+        "f1": 0.28571428571428575
+      },
+      {
+        "id": "5ac113e2554299294b21909a",
+        "pred": "Leslie Bricusse",
+        "gold": "Wildhorn, Bricusse and Cuden",
+        "em": 0.0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "id": "5a82fe5055429966c78a6ad3",
+        "pred": "Evangelical Christianity",
+        "gold": "evangelical Christian",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a7e05ba5542995f4f402392",
+        "pred": "The Late Late Show",
+        "gold": "The Late Late Show",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7264ed5542990c210a411a",
+        "pred": "Blood and Soil (Blut und Boden)",
+        "gold": "Blood and soil",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a8ed10b5542995085b374a0",
+        "pred": "The Visit",
+        "gold": "The Visit",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5add8f055542990dbb2f7e6d",
+        "pred": "Rolf\u202fG\u00fcnther\u202fWilhelm\u202fPfannenstiel \u2013 Rudolf\u202fH\u00f6ss",
+        "gold": "Rudolf H\u00f6ss",
+        "em": 0.0,
+        "f1": 0.4444444444444445
+      },
+      {
+        "id": "5a86ab7755429960ec39b6bf",
+        "pred": "Adventure.",
+        "gold": "an adventure novel",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a7a112a5542990783324e2b",
+        "pred": "Mark\u202fGaudet \u2013 indie\u2011metal/black\u2011metal musician; Jan\u202fAxel\u202fBlomberg \u2013 heavy\u2011metal drummer.",
+        "gold": "drummer",
+        "em": 0.0,
+        "f1": 0.16666666666666669
+      },
+      {
+        "id": "5ab870ee5542990e739ec8f6",
+        "pred": "Madeleine L'Engle",
+        "gold": "Madeleine L'Engle",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8810485542997e5c09a590",
+        "pred": "1.6\u202fmillion passengers",
+        "gold": "1.6 million passengers",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8208ee5542990a1d231f1e",
+        "pred": "green dinosaur",
+        "gold": "dinosaur",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a86399e5542994775f60733",
+        "pred": "Norwegian",
+        "gold": "Punjabi/Pashtun",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a78e9a2554299148911f995",
+        "pred": "Drillers Stadium",
+        "gold": "Drillers Stadium",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a84995d5542997b5ce3fee4",
+        "pred": "Alachua County.",
+        "gold": "Alachua",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab941c2554299743d22ea88",
+        "pred": "C.\u202fJ.\u202fCherryh",
+        "gold": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5a8e5f1f5542995a26add4d6",
+        "pred": "Sapsali",
+        "gold": "Sapsali",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abf1ad15542997ec76fd3c2",
+        "pred": "Marquis de Lafayette",
+        "gold": "Marquis de Lafayette",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae5cf625542996de7b71a22",
+        "pred": "Texas Longhorns football team",
+        "gold": "University of Texas Longhorns",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a7c8ae855429935c91b5207",
+        "pred": "Alexander\u202fBorodin",
+        "gold": "Alexander Porfiryevich Borodin",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5a87106555429960ec39b71f",
+        "pred": "Rob Reiner",
+        "gold": "Rob Reiner",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7f296f55429934daa2fd10",
+        "pred": "1974",
+        "gold": "1974",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae14b5c55429920d52343aa",
+        "pred": "Anderson\u202fSilva",
+        "gold": "Anderson Silva",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a88b3b4554299206df2b336",
+        "pred": "Opera.",
+        "gold": "music",
+        "em": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "5": [
+      {
+        "id": "5ae143ed55429920d5234360",
+        "pred": "1755",
+        "gold": "1755",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc19705542993a06baf86e",
+        "pred": "Dutch",
+        "gold": "Dutch",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3e0f7554299194317388b",
+        "pred": "None",
+        "gold": "Kevin Spacey",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae518655542993aec5ec139",
+        "pred": "40 members",
+        "gold": "40 members",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab985eb554299131ca42360",
+        "pred": "Greyia",
+        "gold": "Greyia",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8753d95542994846c1cd63",
+        "pred": "No.",
+        "gold": "yes",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab97d0a5542996be202051e",
+        "pred": "John Andr\u00e9",
+        "gold": "John Andr\u00e9",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adef1b35542993a75d263af",
+        "pred": "Pen\u00e9lope\u202fCruz and Salma\u202fHayek",
+        "gold": "Salma Hayek Pinault",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a73b55855429978a71e9086",
+        "pred": "Gatwick Airport",
+        "gold": "Gatwick Airport",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae80919554299540e5a56f6",
+        "pred": "Sir Walter Scott",
+        "gold": "The Changing Scottish Landscape",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae361605542994393b9e69b",
+        "pred": "Naval Submarine Base London",
+        "gold": "\"Home of the Submarine Force\"",
+        "em": 0.0,
+        "f1": 0.25
+      },
+      {
+        "id": "5ac3a76e554299741d48a2be",
+        "pred": "U2",
+        "gold": "U2",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7557d75542992d0ec05f68",
+        "pred": "Courteney Cox",
+        "gold": "Laurie Metcalf",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8d12ca5542994ba4e3dbe2",
+        "pred": "Nairobi",
+        "gold": "Nairobi, Kenya",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab7f6d35542993667794070",
+        "pred": "Cyclic\u202fDefrost",
+        "gold": "Cyclic Defrost",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3d9135542995c82c4ac4c",
+        "pred": "Granite, Arkansas \u2013 about 1,000 residents.",
+        "gold": "729 at the 2010 census",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae129115542990adbacf722",
+        "pred": "The Pogues",
+        "gold": "Francis McPeake",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86769c5542994775f60776",
+        "pred": "Slaughterhouse\u2011Five",
+        "gold": "Slaughterhouse-Five",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab31864554299233954ff06",
+        "pred": "Sarod",
+        "gold": "strings",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7b1023554299042af8f6c2",
+        "pred": "The Many Adventures of Winnie the Pooh.",
+        "gold": "Ride a Wild Pony",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac19f405542991316484b5b",
+        "pred": "dogs",
+        "gold": "dogs",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae382ee5542992e3233c430",
+        "pred": "Classical realism",
+        "gold": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5adcdf455542994ed6169c11",
+        "pred": "Royal Air Force.",
+        "gold": "Royal Air Force",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac35a7e554299741d48a257",
+        "pred": "Norwegian",
+        "gold": "Norwegian language",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab2659e554299340b5254b2",
+        "pred": "Sasanian Empire",
+        "gold": "the Parthian Empire",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5adcbb815542994ed6169bde",
+        "pred": "Stone Brewing",
+        "gold": "Stone Brewing",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a74f8bd5542993748c8976a",
+        "pred": "Tim Cluess",
+        "gold": "Tim Cluess",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ade25ed5542997c77aded70",
+        "pred": "Cold War",
+        "gold": "the Cold War (1947\u201391)",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5a78ae8b5542990784727730",
+        "pred": "115\u202fkm",
+        "gold": "about 115 miles (185 km)",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ae12a4b55429920d52342df",
+        "pred": "Logar",
+        "gold": "Puli Alam",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae22eae554299495565da30",
+        "pred": "3,251",
+        "gold": "310",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab6aa4c55429953192ad359",
+        "pred": "Charlie Brown",
+        "gold": "\"Kitty Hawk\"",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5adf3e835542993a75d26442",
+        "pred": "Nick\u202fFury\u202fvs.\u202fS.H.I.E.L.D.",
+        "gold": "Marvel",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ee3a755429917b4a5be02",
+        "pred": "Bing Crosby",
+        "gold": "Harry Lillis \"Bing\" Crosby Jr.",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ac0dcf25542996f0d89cc2c",
+        "pred": "David\u202fKoch",
+        "gold": "Jane Mayer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7e618155429949594199b0",
+        "pred": "Albany County",
+        "gold": "Albany",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab916e155429919ba4e23a4",
+        "pred": "",
+        "gold": "Chiwetel Ejiofor",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a713b325542994082a3e6b5",
+        "pred": "Agra",
+        "gold": "Agra",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a87c13f5542996e4f30890c",
+        "pred": "",
+        "gold": "Rome",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8843cd5542994846c1ce75",
+        "pred": "Shire River",
+        "gold": "Buffalo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab90d8955429916710eb0f1",
+        "pred": "Smoothie King Center",
+        "gold": "Smoothie King Center",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae788fa55429952e35ea964",
+        "pred": "Harmonica solos.",
+        "gold": "extensive use of segues",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1925a554299492dc91b48",
+        "pred": "Charlotte Elliot",
+        "gold": "Charlotte Carnegie",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5ae1443855429920d5234362",
+        "pred": "World War\u202fII",
+        "gold": "World War II",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac54c435542993e66e822d1",
+        "pred": "Oklahoma State University",
+        "gold": "Oklahoma State University",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7a77425542995eb53be83e",
+        "pred": "Equal (both have three solo albums)",
+        "gold": "Brady Seals",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7153d05542994082a3e7dc",
+        "pred": "Nusretiye Mosque",
+        "gold": "Nusretiye Mosque",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae361805542992e3233c3c9",
+        "pred": "University of North Carolina at Chapel Hill",
+        "gold": "Georgetown University",
+        "em": 0.0,
+        "f1": 0.22222222222222224
+      },
+      {
+        "id": "5a72688c5542997f827839b2",
+        "pred": "Turkey",
+        "gold": "Turkey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7ce0ce554299452d57ba92",
+        "pred": "William\u202fMcKinley",
+        "gold": "William McKinley",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a83411655429966c78a6b5d",
+        "pred": "Aaron\u202fMcGruder",
+        "gold": "Justin Spitzer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a877dd65542993e715abf79",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6087a554299110f2199be",
+        "pred": "Yes.",
+        "gold": "yes",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adbd70c55429947ff173843",
+        "pred": "The Last Lion",
+        "gold": "Personal History",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7796e05542992a6e59df0f",
+        "pred": "Netherlands",
+        "gold": "Netherlands",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc030e554299642a094bdc",
+        "pred": "1950",
+        "gold": "1945 to 1951",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7bb7f2554299042af8f7b6",
+        "pred": "Gweilo",
+        "gold": "Gweilo",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8b3de95542997f31a41cc3",
+        "pred": "1993",
+        "gold": "Tian Tan Buddha",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab3bfd3554299233954ff99",
+        "pred": "Dirk Nowitzki",
+        "gold": "Dirk Werner Nowitzki",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ab9b7d555429970cfb8eb7a",
+        "pred": "Henry\u202fLau",
+        "gold": "Henry Lau",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6bf6d55429953192ad372",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae7cb9b5542994a481bbde2",
+        "pred": "Unknown",
+        "gold": "Kalokuokamaile",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab1d6545542997061209588",
+        "pred": "12 years old",
+        "gold": "Bocelli became completely blind at the age of 12",
+        "em": 0.0,
+        "f1": 0.18181818181818182
+      },
+      {
+        "id": "5addcb215542997dc7907033",
+        "pred": "Naomi Campbell",
+        "gold": "Naomi Elaine Campbell",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ae528ed5542993aec5ec16e",
+        "pred": "The Dutchess of Malfi",
+        "gold": "Revengers Tragedy",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8c7ced5542995e66a4761c",
+        "pred": "Film and entertainment industry.",
+        "gold": "entertainment",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a72f74a55429901807daf59",
+        "pred": "None",
+        "gold": "Rosie O'Donnell",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1d4e8554299234fd04312",
+        "pred": "Ben\u202fFolds",
+        "gold": "Robert Ian \"Rob\" Sitch",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a80aeef5542992097ad301a",
+        "pred": "The Shins",
+        "gold": "The Shins",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7f66f155429969796c1a33",
+        "pred": "Sweden, Norway, Denmark",
+        "gold": "Denmark\u2013Norway\u2013Sweden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abbda84554299642a094b5b",
+        "pred": "Mach\u202f2.",
+        "gold": "2",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5abe3dc65542993f32c2a0c4",
+        "pred": "11",
+        "gold": "8",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae489ab5542995ad6573d62",
+        "pred": "Mookie Blaylock",
+        "gold": "Mookie Blaylock",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7e1b7155429965cec5ea6c",
+        "pred": "General Motors",
+        "gold": "Fiat Chrysler Automobiles N.V.",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8fae205542997ba9cb32ec",
+        "pred": "Teen sitcom.",
+        "gold": "American-Canadian mystery-drama",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae588cb55429960a22e0300",
+        "pred": "Chaerophyllum",
+        "gold": "Chaerophyllum",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a75e62f5542992d0ec06013",
+        "pred": "Tropicana Casino, Hotel & Spa.",
+        "gold": "Tropicana Casino & Resort",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ac113e2554299294b21909a",
+        "pred": "Charles Hart",
+        "gold": "Wildhorn, Bricusse and Cuden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a82fe5055429966c78a6ad3",
+        "pred": "Protestant (Evangelical) Christianity",
+        "gold": "evangelical Christian",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a7e05ba5542995f4f402392",
+        "pred": "The Late Late Show",
+        "gold": "The Late Late Show",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7264ed5542990c210a411a",
+        "pred": "Blood and Soil (Blut und Boden)",
+        "gold": "Blood and soil",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a8ed10b5542995085b374a0",
+        "pred": "The Last House on the Left",
+        "gold": "The Visit",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5add8f055542990dbb2f7e6d",
+        "pred": "Rudolf\u202fH\u00f6ss",
+        "gold": "Rudolf H\u00f6ss",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a86ab7755429960ec39b6bf",
+        "pred": "Adventure fiction",
+        "gold": "an adventure novel",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a7a112a5542990783324e2b",
+        "pred": "Drummers.",
+        "gold": "drummer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab870ee5542990e739ec8f6",
+        "pred": "Madeleine L'Engle",
+        "gold": "Madeleine L'Engle",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8810485542997e5c09a590",
+        "pred": "67,054,745",
+        "gold": "1.6 million passengers",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8208ee5542990a1d231f1e",
+        "pred": "",
+        "gold": "dinosaur",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86399e5542994775f60733",
+        "pred": "Norwegian",
+        "gold": "Punjabi/Pashtun",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a78e9a2554299148911f995",
+        "pred": "Ruppert Stadium",
+        "gold": "Drillers Stadium",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a84995d5542997b5ce3fee4",
+        "pred": "Alachua County",
+        "gold": "Alachua",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab941c2554299743d22ea88",
+        "pred": "C.\u202fJ.\u202fCherryh",
+        "gold": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5a8e5f1f5542995a26add4d6",
+        "pred": "Sapsali",
+        "gold": "Sapsali",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abf1ad15542997ec76fd3c2",
+        "pred": "Marquis Lafayette",
+        "gold": "Marquis de Lafayette",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ae5cf625542996de7b71a22",
+        "pred": "Washington Redskins",
+        "gold": "University of Texas Longhorns",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7c8ae855429935c91b5207",
+        "pred": "Alexander\u202fBorodin",
+        "gold": "Alexander Porfiryevich Borodin",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5a87106555429960ec39b71f",
+        "pred": "Barry Levinson",
+        "gold": "Rob Reiner",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7f296f55429934daa2fd10",
+        "pred": "1974",
+        "gold": "1974",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae14b5c55429920d52343aa",
+        "pred": "Anderson Silva",
+        "gold": "Anderson Silva",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a88b3b4554299206df2b336",
+        "pred": "Opera.",
+        "gold": "music",
+        "em": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "10": [
+      {
+        "id": "5ae143ed55429920d5234360",
+        "pred": "1755",
+        "gold": "1755",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc19705542993a06baf86e",
+        "pred": "Dutch",
+        "gold": "Dutch",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3e0f7554299194317388b",
+        "pred": "Kevin Spacey",
+        "gold": "Kevin Spacey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae518655542993aec5ec139",
+        "pred": "40",
+        "gold": "40 members",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab985eb554299131ca42360",
+        "pred": "Greyia",
+        "gold": "Greyia",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8753d95542994846c1cd63",
+        "pred": "No",
+        "gold": "yes",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab97d0a5542996be202051e",
+        "pred": "John Andr\u00e9",
+        "gold": "John Andr\u00e9",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adef1b35542993a75d263af",
+        "pred": "Pen\u00e9lope\u202fCruz",
+        "gold": "Salma Hayek Pinault",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a73b55855429978a71e9086",
+        "pred": "Gatwick Airport",
+        "gold": "Gatwick Airport",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae80919554299540e5a56f6",
+        "pred": "a novelist",
+        "gold": "The Changing Scottish Landscape",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae361605542994393b9e69b",
+        "pred": "Pacific Regional Correctional Facility Southwest",
+        "gold": "\"Home of the Submarine Force\"",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac3a76e554299741d48a2be",
+        "pred": "U2",
+        "gold": "U2",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7557d75542992d0ec05f68",
+        "pred": "Courteney Cox",
+        "gold": "Laurie Metcalf",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8d12ca5542994ba4e3dbe2",
+        "pred": "London",
+        "gold": "Nairobi, Kenya",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab7f6d35542993667794070",
+        "pred": "Cyclic Defrost",
+        "gold": "Cyclic Defrost",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac3d9135542995c82c4ac4c",
+        "pred": "1,200",
+        "gold": "729 at the 2010 census",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae129115542990adbacf722",
+        "pred": "The Pogues",
+        "gold": "Francis McPeake",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86769c5542994775f60776",
+        "pred": "Slaughterhouse\u2011Five",
+        "gold": "Slaughterhouse-Five",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab31864554299233954ff06",
+        "pred": "String instrument",
+        "gold": "strings",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7b1023554299042af8f6c2",
+        "pred": "The Many Adventures of Winnie the Pooh",
+        "gold": "Ride a Wild Pony",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac19f405542991316484b5b",
+        "pred": "Dogs",
+        "gold": "dogs",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae382ee5542992e3233c430",
+        "pred": "Classical realism",
+        "gold": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5adcdf455542994ed6169c11",
+        "pred": "Hawker Hurricane aircraft.",
+        "gold": "Royal Air Force",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac35a7e554299741d48a257",
+        "pred": "Ewe",
+        "gold": "Norwegian language",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab2659e554299340b5254b2",
+        "pred": "Parthian Empire",
+        "gold": "the Parthian Empire",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adcbb815542994ed6169bde",
+        "pred": "Escondido Brewing Company",
+        "gold": "Stone Brewing",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a74f8bd5542993748c8976a",
+        "pred": "Tim\u202fCluess",
+        "gold": "Tim Cluess",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ade25ed5542997c77aded70",
+        "pred": "World War\u202fI",
+        "gold": "the Cold War (1947\u201391)",
+        "em": 0.0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "id": "5a78ae8b5542990784727730",
+        "pred": "~30\u202fmiles south of Sacramento.",
+        "gold": "about 115 miles (185 km)",
+        "em": 0.0,
+        "f1": 0.20000000000000004
+      },
+      {
+        "id": "5ae12a4b55429920d52342df",
+        "pred": "Logar",
+        "gold": "Puli Alam",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae22eae554299495565da30",
+        "pred": "6,687",
+        "gold": "310",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab6aa4c55429953192ad359",
+        "pred": "Charlie Brown",
+        "gold": "\"Kitty Hawk\"",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5adf3e835542993a75d26442",
+        "pred": "Nick\u202fFury,\u202fAgent\u202fof\u202fS.H.I.E.L.D.",
+        "gold": "Marvel",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ee3a755429917b4a5be02",
+        "pred": "Bing Crosby",
+        "gold": "Harry Lillis \"Bing\" Crosby Jr.",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ac0dcf25542996f0d89cc2c",
+        "pred": "David",
+        "gold": "Jane Mayer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7e618155429949594199b0",
+        "pred": "Orange County",
+        "gold": "Albany",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab916e155429919ba4e23a4",
+        "pred": "Chiwetel Ejiofor",
+        "gold": "Chiwetel Ejiofor",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a713b325542994082a3e6b5",
+        "pred": "Delhi",
+        "gold": "Agra",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a87c13f5542996e4f30890c",
+        "pred": "New\u202fYork",
+        "gold": "Rome",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8843cd5542994846c1ce75",
+        "pred": "Shire River",
+        "gold": "Buffalo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab90d8955429916710eb0f1",
+        "pred": "Air Canada Centre",
+        "gold": "Smoothie King Center",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae788fa55429952e35ea964",
+        "pred": "Live improvisation (jam\u2011band style)",
+        "gold": "extensive use of segues",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1925a554299492dc91b48",
+        "pred": "Robert Browning",
+        "gold": "Charlotte Carnegie",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1443855429920d5234362",
+        "pred": "Operation Bagration",
+        "gold": "World War II",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac54c435542993e66e822d1",
+        "pred": "Oklahoma State University",
+        "gold": "Oklahoma State University",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7a77425542995eb53be83e",
+        "pred": "Brady\u202fSeals",
+        "gold": "Brady Seals",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7153d05542994082a3e7dc",
+        "pred": "Bayezid II Mosque",
+        "gold": "Nusretiye Mosque",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5ae361805542992e3233c3c9",
+        "pred": "University of Michigan",
+        "gold": "Georgetown University",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a72688c5542997f827839b2",
+        "pred": "Turkey",
+        "gold": "Turkey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7ce0ce554299452d57ba92",
+        "pred": "William McKinley",
+        "gold": "William McKinley",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a83411655429966c78a6b5d",
+        "pred": "Justin Spitzer",
+        "gold": "Justin Spitzer",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a877dd65542993e715abf79",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6087a554299110f2199be",
+        "pred": "Yes.",
+        "gold": "yes",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adbd70c55429947ff173843",
+        "pred": "The Last of the Mohicans",
+        "gold": "Personal History",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7796e05542992a6e59df0f",
+        "pred": "Netherlands",
+        "gold": "Netherlands",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc030e554299642a094bdc",
+        "pred": "Clement Attlee",
+        "gold": "1945 to 1951",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7bb7f2554299042af8f7b6",
+        "pred": "gwei lo (\u9b3c\u4f6c)",
+        "gold": "Gweilo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8b3de95542997f31a41cc3",
+        "pred": "1993",
+        "gold": "Tian Tan Buddha",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab3bfd3554299233954ff99",
+        "pred": "Dirk Nowitzki",
+        "gold": "Dirk Werner Nowitzki",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ab9b7d555429970cfb8eb7a",
+        "pred": "Henry\u202fLau",
+        "gold": "Henry Lau",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6bf6d55429953192ad372",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae7cb9b5542994a481bbde2",
+        "pred": "Unknown",
+        "gold": "Kalokuokamaile",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab1d6545542997061209588",
+        "pred": "12 years old",
+        "gold": "Bocelli became completely blind at the age of 12",
+        "em": 0.0,
+        "f1": 0.18181818181818182
+      },
+      {
+        "id": "5addcb215542997dc7907033",
+        "pred": "Naomi Campbell",
+        "gold": "Naomi Elaine Campbell",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ae528ed5542993aec5ec16e",
+        "pred": "The Last of the Mohicans",
+        "gold": "Revengers Tragedy",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8c7ced5542995e66a4761c",
+        "pred": "Film and television industry.",
+        "gold": "entertainment",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a72f74a55429901807daf59",
+        "pred": "Rosie O'Donnell",
+        "gold": "Rosie O'Donnell",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae1d4e8554299234fd04312",
+        "pred": "Rachael\u202fTaylor",
+        "gold": "Robert Ian \"Rob\" Sitch",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a80aeef5542992097ad301a",
+        "pred": "The Shins",
+        "gold": "The Shins",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7f66f155429969796c1a33",
+        "pred": "Sweden, Norway, Denmark",
+        "gold": "Denmark\u2013Norway\u2013Sweden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abbda84554299642a094b5b",
+        "pred": "2",
+        "gold": "2",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abe3dc65542993f32c2a0c4",
+        "pred": "7",
+        "gold": "8",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae489ab5542995ad6573d62",
+        "pred": "Kenny Smith",
+        "gold": "Mookie Blaylock",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7e1b7155429965cec5ea6c",
+        "pred": "Chrysler.",
+        "gold": "Fiat Chrysler Automobiles N.V.",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a8fae205542997ba9cb32ec",
+        "pred": "Sitcom.",
+        "gold": "American-Canadian mystery-drama",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae588cb55429960a22e0300",
+        "pred": "Chaerophyllum",
+        "gold": "Chaerophyllum",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a75e62f5542992d0ec06013",
+        "pred": "Tropicana Hotel (Atlantic City)",
+        "gold": "Tropicana Casino & Resort",
+        "em": 0.0,
+        "f1": 0.28571428571428575
+      },
+      {
+        "id": "5ac113e2554299294b21909a",
+        "pred": "Charles Hart",
+        "gold": "Wildhorn, Bricusse and Cuden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a82fe5055429966c78a6ad3",
+        "pred": "Christian (Protestant)",
+        "gold": "evangelical Christian",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a7e05ba5542995f4f402392",
+        "pred": "The Tonight Show",
+        "gold": "The Late Late Show",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a7264ed5542990c210a411a",
+        "pred": "Ein\u202fVolk,\u202fein\u202fReich,\u202fein\u202fF\u00fchrer.",
+        "gold": "Blood and soil",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ed10b5542995085b374a0",
+        "pred": "The Visit",
+        "gold": "The Visit",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5add8f055542990dbb2f7e6d",
+        "pred": "Rudolf\u202fH\u00f6ss",
+        "gold": "Rudolf H\u00f6ss",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a86ab7755429960ec39b6bf",
+        "pred": "Adventure.",
+        "gold": "an adventure novel",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a7a112a5542990783324e2b",
+        "pred": "Lo\u2011fi psychedelia musicians.",
+        "gold": "drummer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab870ee5542990e739ec8f6",
+        "pred": "Madeleine L'Engle",
+        "gold": "Madeleine L'Engle",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8810485542997e5c09a590",
+        "pred": "847,257",
+        "gold": "1.6 million passengers",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8208ee5542990a1d231f1e",
+        "pred": "Red\u2011and\u2011white \u201cS\u201d logo.",
+        "gold": "dinosaur",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86399e5542994775f60733",
+        "pred": "Punjabi/Pashtun",
+        "gold": "Punjabi/Pashtun",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a78e9a2554299148911f995",
+        "pred": "Ruppert Stadium",
+        "gold": "Drillers Stadium",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a84995d5542997b5ce3fee4",
+        "pred": "Manatee County",
+        "gold": "Alachua",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab941c2554299743d22ea88",
+        "pred": "C.\u202fJ.\u202fCherryh",
+        "gold": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5a8e5f1f5542995a26add4d6",
+        "pred": "Segugio Italiano",
+        "gold": "Sapsali",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abf1ad15542997ec76fd3c2",
+        "pred": "Lafayette",
+        "gold": "Marquis de Lafayette",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5ae5cf625542996de7b71a22",
+        "pred": "Washington Redskins",
+        "gold": "University of Texas Longhorns",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7c8ae855429935c91b5207",
+        "pred": "None",
+        "gold": "Alexander Porfiryevich Borodin",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a87106555429960ec39b71f",
+        "pred": "Richard Pearce",
+        "gold": "Rob Reiner",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7f296f55429934daa2fd10",
+        "pred": "1974",
+        "gold": "1974",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae14b5c55429920d52343aa",
+        "pred": "Anderson\u202fSilva",
+        "gold": "Anderson Silva",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a88b3b4554299206df2b336",
+        "pred": "Theatre.",
+        "gold": "music",
+        "em": 0.0,
+        "f1": 0.0
+      }
+    ],
+    "20": [
+      {
+        "id": "5ae143ed55429920d5234360",
+        "pred": "1755",
+        "gold": "1755",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc19705542993a06baf86e",
+        "pred": "Jewish",
+        "gold": "Dutch",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac3e0f7554299194317388b",
+        "pred": "Kevin Spacey",
+        "gold": "Kevin Spacey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae518655542993aec5ec139",
+        "pred": "60",
+        "gold": "40 members",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab985eb554299131ca42360",
+        "pred": "Greyia",
+        "gold": "Greyia",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8753d95542994846c1cd63",
+        "pred": "No",
+        "gold": "yes",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab97d0a5542996be202051e",
+        "pred": "John Andr\u00e9",
+        "gold": "John Andr\u00e9",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adef1b35542993a75d263af",
+        "pred": "Salma\u202fHayek and Julia\u202fRoberts",
+        "gold": "Salma Hayek Pinault",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a73b55855429978a71e9086",
+        "pred": "Gatwick",
+        "gold": "Gatwick Airport",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ae80919554299540e5a56f6",
+        "pred": "Sir Walter Scott",
+        "gold": "The Changing Scottish Landscape",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae361605542994393b9e69b",
+        "pred": "Correctional Facility 208000\u202f400\u202f31\u202f173, Groton, Connecticut",
+        "gold": "\"Home of the Submarine Force\"",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac3a76e554299741d48a2be",
+        "pred": "U2",
+        "gold": "U2",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7557d75542992d0ec05f68",
+        "pred": "None",
+        "gold": "Laurie Metcalf",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8d12ca5542994ba4e3dbe2",
+        "pred": "London",
+        "gold": "Nairobi, Kenya",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab7f6d35542993667794070",
+        "pred": "Sonic.",
+        "gold": "Cyclic Defrost",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac3d9135542995c82c4ac4c",
+        "pred": "16,633",
+        "gold": "729 at the 2010 census",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae129115542990adbacf722",
+        "pred": "Shane\u202fMacGowan",
+        "gold": "Francis McPeake",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86769c5542994775f60776",
+        "pred": "Slaughterhouse\u2011Five",
+        "gold": "Slaughterhouse-Five",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab31864554299233954ff06",
+        "pred": "String instrument",
+        "gold": "strings",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7b1023554299042af8f6c2",
+        "pred": "The Many Adventures of Winnie the Pooh",
+        "gold": "Ride a Wild Pony",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac19f405542991316484b5b",
+        "pred": "Dogs",
+        "gold": "dogs",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae382ee5542992e3233c430",
+        "pred": "Neorealism",
+        "gold": "Modern thinkers associated with classical realism are Carl von Clausewitz",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5adcdf455542994ed6169c11",
+        "pred": "Royal Air Force (RAF)",
+        "gold": "Royal Air Force",
+        "em": 0.0,
+        "f1": 0.8571428571428571
+      },
+      {
+        "id": "5ac35a7e554299741d48a257",
+        "pred": "Norwegian",
+        "gold": "Norwegian language",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5ab2659e554299340b5254b2",
+        "pred": "Sasanian Empire",
+        "gold": "the Parthian Empire",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5adcbb815542994ed6169bde",
+        "pred": "Escondido Brewing Company",
+        "gold": "Stone Brewing",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a74f8bd5542993748c8976a",
+        "pred": "Tim\u202fCluess.",
+        "gold": "Tim Cluess",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ade25ed5542997c77aded70",
+        "pred": "Russian Civil War",
+        "gold": "the Cold War (1947\u201391)",
+        "em": 0.0,
+        "f1": 0.3333333333333333
+      },
+      {
+        "id": "5a78ae8b5542990784727730",
+        "pred": "About 30\u202fmiles south.",
+        "gold": "about 115 miles (185 km)",
+        "em": 0.0,
+        "f1": 0.4444444444444445
+      },
+      {
+        "id": "5ae12a4b55429920d52342df",
+        "pred": "Kandahar city",
+        "gold": "Puli Alam",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae22eae554299495565da30",
+        "pred": "2,019",
+        "gold": "310",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab6aa4c55429953192ad359",
+        "pred": "Charlie Brown",
+        "gold": "\"Kitty Hawk\"",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5adf3e835542993a75d26442",
+        "pred": "Secret\u202fWarriors",
+        "gold": "Marvel",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ee3a755429917b4a5be02",
+        "pred": "Bing Crosby",
+        "gold": "Harry Lillis \"Bing\" Crosby Jr.",
+        "em": 0.0,
+        "f1": 0.5714285714285715
+      },
+      {
+        "id": "5ac0dcf25542996f0d89cc2c",
+        "pred": "David McCullough",
+        "gold": "Jane Mayer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7e618155429949594199b0",
+        "pred": "Saratoga County",
+        "gold": "Albany",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab916e155429919ba4e23a4",
+        "pred": "Michael Fassbender",
+        "gold": "Chiwetel Ejiofor",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a713b325542994082a3e6b5",
+        "pred": "Agra",
+        "gold": "Agra",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a87c13f5542996e4f30890c",
+        "pred": "",
+        "gold": "Rome",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8843cd5542994846c1ce75",
+        "pred": "Mwabvi River",
+        "gold": "Buffalo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab90d8955429916710eb0f1",
+        "pred": "Scotiabank Arena",
+        "gold": "Smoothie King Center",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae788fa55429952e35ea964",
+        "pred": "jam sessions",
+        "gold": "extensive use of segues",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1925a554299492dc91b48",
+        "pred": "Sir William Alexander",
+        "gold": "Charlotte Carnegie",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1443855429920d5234362",
+        "pred": "World War\u202fII",
+        "gold": "World War II",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ac54c435542993e66e822d1",
+        "pred": "Oklahoma State University.",
+        "gold": "Oklahoma State University",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7a77425542995eb53be83e",
+        "pred": "Brady Seals",
+        "gold": "Brady Seals",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7153d05542994082a3e7dc",
+        "pred": "Bayezid\u202fII Mosque",
+        "gold": "Nusretiye Mosque",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5ae361805542992e3233c3c9",
+        "pred": "University of Michigan",
+        "gold": "Georgetown University",
+        "em": 0.0,
+        "f1": 0.4
+      },
+      {
+        "id": "5a72688c5542997f827839b2",
+        "pred": "Turkey",
+        "gold": "Turkey",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a7ce0ce554299452d57ba92",
+        "pred": "William McKinley",
+        "gold": "William McKinley",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a83411655429966c78a6b5d",
+        "pred": "Greg Daniels",
+        "gold": "Justin Spitzer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a877dd65542993e715abf79",
+        "pred": "No.",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6087a554299110f2199be",
+        "pred": "Yes.",
+        "gold": "yes",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5adbd70c55429947ff173843",
+        "pred": "The President's Daughter",
+        "gold": "Personal History",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7796e05542992a6e59df0f",
+        "pred": "Netherlands",
+        "gold": "Netherlands",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5abc030e554299642a094bdc",
+        "pred": "1947",
+        "gold": "1945 to 1951",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7bb7f2554299042af8f7b6",
+        "pred": "\u9b3c\u4ed4",
+        "gold": "Gweilo",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8b3de95542997f31a41cc3",
+        "pred": "1993",
+        "gold": "Tian Tan Buddha",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab3bfd3554299233954ff99",
+        "pred": "Dirk Nowitzki",
+        "gold": "Dirk Werner Nowitzki",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ab9b7d555429970cfb8eb7a",
+        "pred": "Henry\u202fLau",
+        "gold": "Henry Lau",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ab6bf6d55429953192ad372",
+        "pred": "No",
+        "gold": "no",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae7cb9b5542994a481bbde2",
+        "pred": "Robert",
+        "gold": "Kalokuokamaile",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab1d6545542997061209588",
+        "pred": "12 years old",
+        "gold": "Bocelli became completely blind at the age of 12",
+        "em": 0.0,
+        "f1": 0.18181818181818182
+      },
+      {
+        "id": "5addcb215542997dc7907033",
+        "pred": "Naomi Campbell",
+        "gold": "Naomi Elaine Campbell",
+        "em": 0.0,
+        "f1": 0.8
+      },
+      {
+        "id": "5ae528ed5542993aec5ec16e",
+        "pred": "The Last of the Mohicans",
+        "gold": "Revengers Tragedy",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8c7ced5542995e66a4761c",
+        "pred": "Film industry.",
+        "gold": "entertainment",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a72f74a55429901807daf59",
+        "pred": "Jim Carrey",
+        "gold": "Rosie O'Donnell",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae1d4e8554299234fd04312",
+        "pred": "Ben\u202fBaker",
+        "gold": "Robert Ian \"Rob\" Sitch",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a80aeef5542992097ad301a",
+        "pred": "The New\u202fPornographers",
+        "gold": "The Shins",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7f66f155429969796c1a33",
+        "pred": "Norway, Sweden, Denmark",
+        "gold": "Denmark\u2013Norway\u2013Sweden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abbda84554299642a094b5b",
+        "pred": "Mach\u202f1.5",
+        "gold": "2",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abe3dc65542993f32c2a0c4",
+        "pred": "7",
+        "gold": "8",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae489ab5542995ad6573d62",
+        "pred": "",
+        "gold": "Mookie Blaylock",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7e1b7155429965cec5ea6c",
+        "pred": "General Motors",
+        "gold": "Fiat Chrysler Automobiles N.V.",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8fae205542997ba9cb32ec",
+        "pred": "Science\u2011fiction drama series",
+        "gold": "American-Canadian mystery-drama",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ae588cb55429960a22e0300",
+        "pred": "Chaerophyllum",
+        "gold": "Chaerophyllum",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a75e62f5542992d0ec06013",
+        "pred": "Harrah\u2019s Atlantic City.",
+        "gold": "Tropicana Casino & Resort",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ac113e2554299294b21909a",
+        "pred": "Charles Hart",
+        "gold": "Wildhorn, Bricusse and Cuden",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a82fe5055429966c78a6ad3",
+        "pred": "Christian (Protestant)",
+        "gold": "evangelical Christian",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a7e05ba5542995f4f402392",
+        "pred": "Johnny Carson",
+        "gold": "The Late Late Show",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7264ed5542990c210a411a",
+        "pred": "Wir brauchen mehr Raum.",
+        "gold": "Blood and soil",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8ed10b5542995085b374a0",
+        "pred": "",
+        "gold": "The Visit",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5add8f055542990dbb2f7e6d",
+        "pred": "Rudolf\u202fH\u00f6ss",
+        "gold": "Rudolf H\u00f6ss",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a86ab7755429960ec39b6bf",
+        "pred": "Adventure",
+        "gold": "an adventure novel",
+        "em": 0.0,
+        "f1": 0.6666666666666666
+      },
+      {
+        "id": "5a7a112a5542990783324e2b",
+        "pred": "Drummers.",
+        "gold": "drummer",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab870ee5542990e739ec8f6",
+        "pred": "Madeleine L'Engle",
+        "gold": "Madeleine L'Engle",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5a8810485542997e5c09a590",
+        "pred": "140,077",
+        "gold": "1.6 million passengers",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a8208ee5542990a1d231f1e",
+        "pred": "Red\u2011and\u2011white \u201cS\u201d in a circle.",
+        "gold": "dinosaur",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a86399e5542994775f60733",
+        "pred": "Kurdish",
+        "gold": "Punjabi/Pashtun",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a78e9a2554299148911f995",
+        "pred": "All\u2011American Stadium",
+        "gold": "Drillers Stadium",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a84995d5542997b5ce3fee4",
+        "pred": "Manatee County",
+        "gold": "Alachua",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5ab941c2554299743d22ea88",
+        "pred": "Carolyn Janice Cherry",
+        "gold": "Carolyn Janice Cherry (born September 1, 1942), better known by the pen name C. J. Cherryh,",
+        "em": 0.0,
+        "f1": 0.33333333333333337
+      },
+      {
+        "id": "5a8e5f1f5542995a26add4d6",
+        "pred": "Segugio Italiano",
+        "gold": "Sapsali",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5abf1ad15542997ec76fd3c2",
+        "pred": "Marquis de Lafayette",
+        "gold": "Marquis de Lafayette",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae5cf625542996de7b71a22",
+        "pred": "Washington Redskins",
+        "gold": "University of Texas Longhorns",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7c8ae855429935c91b5207",
+        "pred": "Borodin",
+        "gold": "Alexander Porfiryevich Borodin",
+        "em": 0.0,
+        "f1": 0.5
+      },
+      {
+        "id": "5a87106555429960ec39b71f",
+        "pred": "Richard Pearce",
+        "gold": "Rob Reiner",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a7f296f55429934daa2fd10",
+        "pred": "1974",
+        "gold": "1974",
+        "em": 1.0,
+        "f1": 1.0
+      },
+      {
+        "id": "5ae14b5c55429920d52343aa",
+        "pred": "Conor McGregor",
+        "gold": "Anderson Silva",
+        "em": 0.0,
+        "f1": 0.0
+      },
+      {
+        "id": "5a88b3b4554299206df2b336",
+        "pred": "Yarn bombing",
+        "gold": "music",
+        "em": 0.0,
+        "f1": 0.0
+      }
+    ]
+  }
+}
