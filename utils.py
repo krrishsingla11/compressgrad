@@ -1,12 +1,12 @@
 import hashlib
 import json
 import os
-import re
-import string
 import time
-from collections import Counter
 
 import litellm
+
+from config import CLEAN_ANSWERS, PROMPT_VERSION
+from metrics import clean_answer, exact_match, f1_score
 
 litellm.drop_params = True       # ignore settings a model doesn't support
 litellm.suppress_debug_info = True
@@ -20,7 +20,15 @@ if os.path.exists(CACHE_FILE):
             line = line.strip()
             if line:
                 row = json.loads(line)
-                _cache[row["key"]] = row
+                if row["text"]:          # empty replies were failed calls: ask again
+                    _cache[row["key"]] = row
+
+TRANSIENT_ERRORS = (
+    litellm.APIConnectionError,
+    litellm.ServiceUnavailableError,
+    litellm.InternalServerError,
+    litellm.Timeout,
+)
 
 
 def ask(prompt, model, max_tokens=1024, system=None):
@@ -41,9 +49,16 @@ def ask(prompt, model, max_tokens=1024, system=None):
                 temperature=0,
                 reasoning_effort="low",
             )
+            text = (resp.choices[0].message.content or "").strip()
+            if not text:
+                # gpt-oss can spend the whole budget on reasoning and return nothing.
+                # Don't cache that (it would be scored as a wrong answer forever): retry with more room.
+                max_tokens *= 2
+                print(f"  empty reply ({resp.choices[0].finish_reason}), retrying with max_tokens={max_tokens}")
+                continue
             row = {
                 "key": key,
-                "text": (resp.choices[0].message.content or "").strip(),
+                "text": text,
                 "prompt_tokens": resp.usage.prompt_tokens,
             }
             _cache[key] = row
@@ -60,36 +75,57 @@ def ask(prompt, model, max_tokens=1024, system=None):
             wait = 20 * (attempt + 1)
             print(f"  rate limit hit, waiting {wait}s...")
             time.sleep(wait)
-    raise RuntimeError("Gave up after repeated rate limits")
-
-
-# ---------- scoring ----------
-def normalize(s):
-    s = s.lower()
-    s = "".join(ch for ch in s if ch not in set(string.punctuation))
-    s = re.sub(r"\b(a|an|the)\b", " ", s)
-    return " ".join(s.split())
-
-
-def exact_match(pred, gold):
-    return float(normalize(pred) == normalize(gold))
-
-
-def f1_score(pred, gold):
-    p, g = normalize(pred).split(), normalize(gold).split()
-    if not p or not g:
-        return float(p == g)
-    common = Counter(p) & Counter(g)
-    same = sum(common.values())
-    if same == 0:
-        return 0.0
-    precision, recall = same / len(p), same / len(g)
-    return 2 * precision * recall / (precision + recall)
+        except TRANSIENT_ERRORS as e:
+            wait = 5 * (attempt + 1)
+            print(f"  {type(e).__name__}, retrying in {wait}s...")
+            time.sleep(wait)
+    raise RuntimeError("Gave up after repeated failures")
 
 
 def build_prompt(context, question):
+    if PROMPT_VERSION == "v2":
+        return (
+            "Answer the question using the context below.\n"
+            "Rules:\n"
+            "- Reply with ONLY the answer, copied exactly as it is written in the context "
+            "(a name, title, date, number or place). No explanation, no full sentence.\n"
+            "- For yes/no questions reply with just yes or no.\n"
+            "- Do not add brackets, descriptions or extra words.\n\n"
+            "Example:\nQuestion: Which country is the band Kraftwerk from?\nAnswer: Germany\n\n"
+            f"Context:\n{context}\n\nQuestion: {question}\nAnswer:"
+        )
     return (
         "Answer the question using the context below. "
         "Reply with ONLY the short answer (a few words), no explanation.\n\n"
         f"Context:\n{context}\n\nQuestion: {question}\nAnswer:"
     )
+
+
+# ---------- evaluation ----------
+def final_answer(text):
+    """The answer that gets scored: the raw reply, tidied if CLEAN_ANSWERS is on."""
+    return clean_answer(text) if CLEAN_ANSWERS else text
+
+
+def evaluate(items, contexts, model, label):
+    """Answer every item using contexts[item id]; return (summary, rows)."""
+    em_t = f1_t = tok_t = 0
+    rows = []
+    for i, item in enumerate(items, 1):
+        out = ask(build_prompt(contexts[item["id"]], item["question"]), model)
+        pred = final_answer(out["text"])
+        em = exact_match(pred, item["answer"])
+        f1 = f1_score(pred, item["answer"])
+        em_t += em
+        f1_t += f1
+        tok_t += out["prompt_tokens"]
+        rows.append({"id": item["id"], "pred": pred, "raw": out["text"], "gold": item["answer"], "em": em, "f1": f1})
+        print(f"[{label} {i}/{len(items)}] gold={item['answer']!r}  pred={pred!r}")
+    n = len(items)
+    summary = {
+        "n": n,
+        "exact_match": round(em_t / n, 3),
+        "f1": round(f1_t / n, 3),
+        "avg_prompt_tokens": round(tok_t / n),
+    }
+    return summary, rows

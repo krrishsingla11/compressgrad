@@ -6,7 +6,8 @@ import textgrad as tg
 from textgrad.engine import EngineLM
 
 from config import ANSWER_MODEL, JUDGE_MODEL, N_REPAIR, REPAIR_RATIOS, REPAIR_ROUNDS
-from utils import ask, build_prompt, exact_match, f1_score
+from metrics import abstains, exact_match, f1_score
+from utils import ask, build_prompt, final_answer
 
 # Usage examples (every command resumes where it stopped):
 #   python repair.py                 original repair (v1), first 30 questions
@@ -16,38 +17,11 @@ from utils import ask, build_prompt, exact_match, f1_score
 #                                    on FRESH questions 61-90
 #   python repair.py v3 final ratios=5,10    same, only at 5x and 10x (uses less quota)
 #   python repair.py v3 final 3      quick test on 3 questions
-limit, V2, V3, HELDOUT, FINAL = N_REPAIR, False, False, False, False
-RATIOS = REPAIR_RATIOS
-for arg in sys.argv[1:]:
-    if arg == "v2":
-        V2 = True
-    elif arg == "v3":
-        V3 = True
-    elif arg == "heldout":
-        HELDOUT = True
-    elif arg == "final":
-        FINAL = True
-    elif arg.startswith("ratios="):
-        RATIOS = [int(x) for x in arg[len("ratios="):].split(",")]
-    elif arg.isdigit():
-        limit = int(arg)
-if V3:
-    V2 = True                      # v3 includes every v2 rule
+#   python repair.py v3 final qa     same, on question-aware compressed contexts (compressed_qa.json)
 
-START = 60 if FINAL else (30 if HELDOUT else 0)
-VERSION = "v3" if V3 else ("v2" if V2 else "v1")
-TAG = ("_v3" if V3 else "_v2" if V2 else "") + ("_final" if FINAL else "_heldout" if HELDOUT else "")
-RESULTS_FILE = f"repair{TAG}_results.jsonl"
-SUMMARY_FILE = f"repair{TAG}_summary.json"
-ROUNDS = 2 if V3 else REPAIR_ROUNDS
-
-ABSTAIN = ("not stated", "unknown", "not specified", "cannot be determined", "no information",
-           "not mentioned", "not provided", "not in the context", "insufficient")
-
-
-def abstains(text):
-    t = text.lower()
-    return any(a in t for a in ABSTAIN)
+# Settings used when another script imports repair() (pipeline, demo, cost replay):
+# the final method, v2. Running this file sets them from the command line instead.
+V2, V3, ROUNDS = True, False, REPAIR_ROUNDS
 
 
 class JudgeEngine(EngineLM):
@@ -117,75 +91,113 @@ def repair(question, context, draft):
     return answer.value
 
 
-# ---------- load data ----------
-with open("data.json", encoding="utf-8") as f:
-    data = json.load(f)[START:START + limit]
-with open("compressed.json", encoding="utf-8") as f:
-    compressed = json.load(f)
-with open("results_baseline.json", encoding="utf-8") as f:
-    baseline = {r["id"]: r for r in json.load(f)["rows"]}
-
-done = {}
-if os.path.exists(RESULTS_FILE):
-    with open(RESULTS_FILE, encoding="utf-8") as f:
-        for line in f:
-            if line.strip():
-                r = json.loads(line)
-                done[(r["ratio"], r["id"])] = r
+def repair_answer(question, context, draft):
+    """repair() plus the safety nets used everywhere: tidy the answer, keep the draft if the
+    optimizer breaks its format, and (v2+) never replace an answer with "unknown".
+    Returns (answer, error, guard_used)."""
+    error, guard = None, False
+    try:
+        repaired = final_answer(repair(question, context, draft))
+    except IndexError:           # optimizer forgot the answer tags: keep the draft
+        repaired, error = draft, "optimizer format error"
+    if V2 and abstains(repaired):  # guard: never replace an answer with "unknown"
+        repaired, guard = draft, True
+    return repaired, error, guard
 
 
-def summarize():
-    summary = []
-    for ratio in RATIOS:
-        rows = [r for (rt, _), r in done.items() if rt == ratio]
-        if not rows:
-            continue
-        n = len(rows)
-        avg = lambda k: sum(r[k] for r in rows) / n
-        base_f1 = sum(baseline[r["id"]]["f1"] for r in rows) / n
-        comp_f1, rep_f1 = avg("draft_f1"), avg("repaired_f1")
-        gap = base_f1 - comp_f1
-        summary.append({
-            "ratio": ratio, "n": n,
-            "baseline_f1": round(base_f1, 3),
-            "compressed_f1": round(comp_f1, 3),
-            "repaired_f1": round(rep_f1, 3),
-            "compressed_em": round(avg("draft_em"), 3),
-            "repaired_em": round(avg("repaired_em"), 3),
-            "recovery_percent": round(100 * (rep_f1 - comp_f1) / gap, 1) if gap > 0 else None,
-            "guard_used": sum(bool(r.get("guard")) for r in rows),
-        })
-    print("\n===== REPAIR SUMMARY (%s%s) =====" % (VERSION, ", fresh questions 61+" if FINAL else ", held-out questions 31+" if HELDOUT else ""))
-    for s in summary:
-        print(s)
-    with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
-        json.dump(summary, f, indent=2)
+if __name__ == "__main__":
+    limit, V2, V3, HELDOUT, FINAL, QA = N_REPAIR, False, False, False, False, False
+    RATIOS = REPAIR_RATIOS
+    for arg in sys.argv[1:]:
+        if arg == "v2":
+            V2 = True
+        elif arg == "v3":
+            V3 = True
+        elif arg == "heldout":
+            HELDOUT = True
+        elif arg == "final":
+            FINAL = True
+        elif arg == "qa":
+            QA = True
+        elif arg.startswith("ratios="):
+            RATIOS = [int(x) for x in arg[len("ratios="):].split(",")]
+        elif arg.isdigit():
+            limit = int(arg)
+    if V3:
+        V2 = True                      # v3 includes every v2 rule
+
+    START = 60 if FINAL else (30 if HELDOUT else 0)
+    VERSION = "v3" if V3 else ("v2" if V2 else "v1")
+    TAG = ("_v3" if V3 else "_v2" if V2 else "") + ("_final" if FINAL else "_heldout" if HELDOUT else "") + ("_qa" if QA else "")
+    RESULTS_FILE = f"repair{TAG}_results.jsonl"
+    SUMMARY_FILE = f"repair{TAG}_summary.json"
+    ROUNDS = 2 if V3 else REPAIR_ROUNDS
+
+    # ---------- load data ----------
+    with open("data.json", encoding="utf-8") as f:
+        data = json.load(f)[START:START + limit]
+    with open("compressed_qa.json" if QA else "compressed.json", encoding="utf-8") as f:
+        compressed = json.load(f)
+    with open("results_baseline.json", encoding="utf-8") as f:
+        baseline = {r["id"]: r for r in json.load(f)["rows"]}
+
+    done = {}
+    if os.path.exists(RESULTS_FILE):
+        with open(RESULTS_FILE, encoding="utf-8") as f:
+            for line in f:
+                if line.strip():
+                    r = json.loads(line)
+                    done[(r["ratio"], r["id"])] = r
 
 
-# ---------- main loop (question by question, so every level progresses evenly) ----------
-try:
-    for i, item in enumerate(data, 1):
+    def summarize():
+        summary = []
         for ratio in RATIOS:
-            if (ratio, item["id"]) in done:
+            rows = [r for (rt, _), r in done.items() if rt == ratio]
+            if not rows:
                 continue
-            ctx = next(r for r in compressed[str(ratio)] if r["id"] == item["id"])["context"]
-            draft = ask(build_prompt(ctx, item["question"]), ANSWER_MODEL)["text"]
-            error, guard = None, False
-            try:
-                repaired = repair(item["question"], ctx, draft)
-            except IndexError:           # optimizer forgot the answer tags: keep the draft
-                repaired, error = draft, "optimizer format error"
-            if V2 and abstains(repaired):  # guard: never replace an answer with "unknown"
-                repaired, guard = draft, True
-            row = {
-                "ratio": ratio, "id": item["id"], "gold": item["answer"],
-                "draft": draft, "repaired": repaired, "error": error, "guard": guard,
-                "draft_em": exact_match(draft, item["answer"]), "draft_f1": f1_score(draft, item["answer"]),
-                "repaired_em": exact_match(repaired, item["answer"]), "repaired_f1": f1_score(repaired, item["answer"]),
-            }
-            done[(ratio, item["id"])] = row
-            with open(RESULTS_FILE, "a", encoding="utf-8") as f:
-                f.write(json.dumps(row, ensure_ascii=False) + "\n")
-            print(f"[{i}/{len(data)}] {ratio}x gold={row['gold']!r} | draft={draft!r} -> repaired={repaired!r}")
-finally:
-    summarize()
+            n = len(rows)
+            avg = lambda k: sum(r[k] for r in rows) / n
+            # score the baseline with the same answer cleanup as the drafts
+            base_f1 = sum(f1_score(final_answer(baseline[r["id"]]["pred"]), r["gold"]) for r in rows) / n
+            comp_f1, rep_f1 = avg("draft_f1"), avg("repaired_f1")
+            gap = base_f1 - comp_f1
+            summary.append({
+                "ratio": ratio, "n": n,
+                "baseline_f1": round(base_f1, 3),
+                "compressed_f1": round(comp_f1, 3),
+                "repaired_f1": round(rep_f1, 3),
+                "compressed_em": round(avg("draft_em"), 3),
+                "repaired_em": round(avg("repaired_em"), 3),
+                "recovery_percent": round(100 * (rep_f1 - comp_f1) / gap, 1) if gap >= 0.05 else None,  # tiny gaps give meaningless %
+                "guard_used": sum(bool(r.get("guard")) for r in rows),
+            })
+        print("\n===== REPAIR SUMMARY (%s%s%s) =====" % (VERSION, ", fresh questions 61+" if FINAL else ", held-out questions 31+" if HELDOUT else "",
+                                                     ", question-aware contexts" if QA else ""))
+        for s in summary:
+            print(s)
+        with open(SUMMARY_FILE, "w", encoding="utf-8") as f:
+            json.dump(summary, f, indent=2)
+
+
+    # ---------- main loop (question by question, so every level progresses evenly) ----------
+    try:
+        for i, item in enumerate(data, 1):
+            for ratio in RATIOS:
+                if (ratio, item["id"]) in done:
+                    continue
+                ctx = next(r for r in compressed[str(ratio)] if r["id"] == item["id"])["context"]
+                draft = final_answer(ask(build_prompt(ctx, item["question"]), ANSWER_MODEL)["text"])
+                repaired, error, guard = repair_answer(item["question"], ctx, draft)
+                row = {
+                    "ratio": ratio, "id": item["id"], "gold": item["answer"],
+                    "draft": draft, "repaired": repaired, "error": error, "guard": guard,
+                    "draft_em": exact_match(draft, item["answer"]), "draft_f1": f1_score(draft, item["answer"]),
+                    "repaired_em": exact_match(repaired, item["answer"]), "repaired_f1": f1_score(repaired, item["answer"]),
+                }
+                done[(ratio, item["id"])] = row
+                with open(RESULTS_FILE, "a", encoding="utf-8") as f:
+                    f.write(json.dumps(row, ensure_ascii=False) + "\n")
+                print(f"[{i}/{len(data)}] {ratio}x gold={row['gold']!r} | draft={draft!r} -> repaired={repaired!r}")
+    finally:
+        summarize()

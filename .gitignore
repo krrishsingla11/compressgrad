@@ -4,3 +4,9 @@ __pycache__/
 *.py[cod]
 .env
 .pytest_cache/
+logs/
+
+# presentation material is shared separately, not kept in the repo
+docs/TEAM_SPLIT.md
+docs/*.pptx
+docs/build/build_slides.js
